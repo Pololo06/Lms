@@ -1,2 +1,2 @@
 # Lms
-This is a proyect for the Web Programming course. 
+This is a project for the Web Programming course. 

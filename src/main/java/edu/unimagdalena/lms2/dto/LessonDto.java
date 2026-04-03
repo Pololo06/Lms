@@ -6,7 +6,7 @@ import jakarta.validation.constraints.NotNull;
 import java.util.UUID;
 
 public class LessonDto {
-    public record LessonCreateRequest(
+    public record LessonRequest(
             @NotBlank String title,
             @NotNull int orderIndex,
             @NotNull UUID courseId

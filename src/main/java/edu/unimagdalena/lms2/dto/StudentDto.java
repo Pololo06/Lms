@@ -7,7 +7,7 @@ import java.time.Instant;
 import java.util.UUID;
 
 public class StudentDto {
-    public record studentRequest (
+    public record StudentRequest (
             @NotBlank String fullName,
             @NotBlank String email,
             @NotNull Instant createdAt,

@@ -8,7 +8,7 @@ import java.util.UUID;
 public class EnrollmentDto {
 
 
-    public record EnrollmentCreateRequest(
+    public record EnrollmentRequest(
             @NotNull UUID studentId,
             @NotNull UUID courseId
     ) {}

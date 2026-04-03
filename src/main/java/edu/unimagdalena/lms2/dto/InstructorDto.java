@@ -8,12 +8,12 @@ import java.util.UUID;
 
 public class InstructorDto {
 
-    public record InstructoCreateRequest(
+    public record InstructorRequest(
             @NotBlank String fullName,
             @NotBlank @Email String email
     ) {}
 
-    public record InstructResponse(
+    public record InstructorResponse(
             UUID id,
             String fullName,
             String email,

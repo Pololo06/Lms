@@ -7,7 +7,7 @@ import java.util.UUID;
 
 public class InstructorProfileDto {
 
-    public record InstructorProfileCreateRequest(
+    public record InstructorProfileRequest(
             @NotBlank String phone,
             @NotBlank String bio,
             @NotNull UUID instructorId

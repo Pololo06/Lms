@@ -1,7 +1,6 @@
 package edu.unimagdalena.lms2.services;
 
-import edu.unimagdalena.lms2.dto.EnrollmentDto.EnrollmentRequest;
-import edu.unimagdalena.lms2.dto.EnrollmentDto.EnrollmentResponse;
+import edu.unimagdalena.lms2.dto.EnrollmentDto;
 
 import java.time.Instant;
 import java.util.List;
@@ -9,14 +8,12 @@ import java.util.UUID;
 
 public interface EnrollmentService {
 
-    // --- CRUD ---
-    EnrollmentResponse create(EnrollmentRequest request);
-    EnrollmentResponse findById(UUID id);
-    List<EnrollmentResponse> findAll();
-    EnrollmentResponse update(UUID id, EnrollmentRequest request);
+    EnrollmentDto.EnrollmentResponse create(EnrollmentDto.EnrollmentRequest request);
+    EnrollmentDto.EnrollmentResponse findById(UUID id);
+    List<EnrollmentDto.EnrollmentResponse> findAll();
+    EnrollmentDto.EnrollmentResponse update(UUID id, EnrollmentDto.EnrollmentUpdateRequest request);
     void delete(UUID id);
 
-    // --- Casos de uso ---
-    List<EnrollmentResponse> findByStatus(String status);
-    List<EnrollmentResponse> findByEnrolledAtBetween(Instant from, Instant to);
+    List<EnrollmentDto.EnrollmentResponse> findByStatus(String status);
+    List<EnrollmentDto.EnrollmentResponse> findByEnrolledAtBetween(Instant from, Instant to);
 }

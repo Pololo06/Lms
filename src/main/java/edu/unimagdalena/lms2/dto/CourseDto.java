@@ -14,7 +14,8 @@ public class CourseDto {
             @Size(min = 3, max = 100)
             String title,
             @NotNull String status,
-            @NotNull UUID instructorId
+            @NotNull UUID instructorId,
+            @NotNull Boolean active
     ) {}
 
     public record CourseResponse(
